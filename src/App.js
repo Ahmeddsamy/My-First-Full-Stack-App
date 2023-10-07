@@ -105,7 +105,7 @@ function NewFactForm({ setFacts, setShowForm }) {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (text && isValidHttpUrl(source) && category && textLength <= 200) {
+    if (text && source && category && textLength <= 200) {
       setIsUploading(true);
       const { data: newFact, error } = await supabase
         .from("facts")
@@ -134,7 +134,7 @@ function NewFactForm({ setFacts, setShowForm }) {
       <input
         value={source}
         type="text"
-        placeholder="Trustworthy source..."
+        placeholder="http://example.com"
         onChange={(e) => setSource(e.target.value)}
         disabled={isUploading}
       />
