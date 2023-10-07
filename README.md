@@ -5,4 +5,4 @@ Check the website here :
 
 https://today-i-learned-ahmedsamy.netlify.app/
 
-- i Used HTML, CSS, React, Supabase or the Database and Netlify for Deployment
+- i Used HTML, CSS, React, Supabase for the Database and Netlify for Deployment
